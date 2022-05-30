@@ -1,0 +1,84 @@
+{
+  "name": "react-control-flowchart",
+  "version": "0.0.1",
+  "description": "This is a flow chart where you can control the flow by connecting nodes.",
+  "author": "chiggang",
+  "homepage": "https://sweetwater.co.kr",
+  "private": false,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "export PORT=10000 && craco start",
+    "start:win": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "compile": "rimraf dist && babel src/components --out-dir dist --copy-files"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^14.1.1",
+    "bezier-js": "^6.1.0",
+    "framer-motion": "^6.3.3",
+    "gsap": "^3.10.4",
+    "lodash": "^4.17.21",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-draggable": "^4.4.5",
+    "react-resize-detector": "^7.0.0",
+    "react-rnd": "^10.3.7",
+    "react-scripts": "^5.0.1",
+    "swr": "^1.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "@craco/craco": "^6.4.3",
+    "@types/bezier-js": "^4.1.0",
+    "@types/jest": "^27.5.0",
+    "@types/lodash": "^4.14.182",
+    "@types/node": "^17.0.31",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
+    "eslint": "^8.14.0",
+    "eslint-config-react-app": "^7.0.1",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^4.6.4"
+  }
+}

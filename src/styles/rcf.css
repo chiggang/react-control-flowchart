@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 샘플: SVG 라인 애니메이션 */
+.test {
+  stroke-dasharray: 1360;
+  transform: translateZ(0);
+  animation: dash 2s linear infinite;
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 2720;
+  }
+}
+.test-node-core {
+  position: fixed !important;
+  touch-action: none;
+  user-select: none;
+  /*transform: translateZ(0) !important;*/
+  /*transform: translate3d(0, 0, 0) !important;*/
+  /*transition: 0.05s ease transform;*/
+  /*transform: translateZ(0) !important;*/
+}
+
+/* Text shadow */
+.react-control-flowchart .text-shadow {
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+}
+.react-control-flowchart .text-shadow-2 {
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
+}
+.react-control-flowchart .text-shadow-3 {
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 3px;
+}
+.react-control-flowchart .text-shadow-4 {
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 4px;
+}
+.react-control-flowchart .text-shadow-5 {
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 5px;
+}
+
+/* Text drop shadow */
+.react-control-flowchart .text-drop-shadow {
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+}
+.react-control-flowchart .text-drop-shadow-2 {
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 2px;
+}
+.react-control-flowchart .text-drop-shadow-3 {
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 3px;
+}
+.react-control-flowchart .text-drop-shadow-4 {
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 4px;
+}
+.react-control-flowchart .text-drop-shadow-5 {
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+}
+
+/* SVG shadow */
+.react-control-flowchart .svg-shadow {
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+}
+.react-control-flowchart .svg-shadow-2 {
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3));
+}
+.react-control-flowchart .svg-shadow-3 {
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3));
+}
+.react-control-flowchart .svg-shadow-4 {
+  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.3));
+}
+.react-control-flowchart .svg-shadow-5 {
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
+}
+
+/* SVG drop shadow */
+.react-control-flowchart .svg-drop-shadow {
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.3));
+}
+.react-control-flowchart .svg-drop-shadow-2 {
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+}
+.react-control-flowchart .svg-drop-shadow-3 {
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
+}
+.react-control-flowchart .svg-drop-shadow-4 {
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+}
+.react-control-flowchart .svg-drop-shadow-5 {
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+}
+
+/* Button */
+.react-control-flowchart .button {
+  cursor: pointer !important;
+}
+.react-control-flowchart .button:hover {
+  opacity: 0.8 !important;
+}
+.react-control-flowchart .button:active {
+  transform: translate(1px, 1px) !important;
+}
+
+/* Input form: Text */
+.react-control-flowchart .input-form input[type='text'] {
+  height: 100%;
+  padding: 2px 5px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(229, 231, 235);
+  background-color: rgb(0, 0, 0);
+  border-radius: 0.25rem;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+}
+.react-control-flowchart .input-form input[type='text']:hover {
+  background-color: rgb(15, 23, 42);
+}
+.react-control-flowchart .input-form input[type='text']:focus {
+  outline: none;
+  background-color: rgb(15, 23, 42);
+}
+
+/* Input form: CheckBox */
+.react-control-flowchart .input-form input[type='checkbox'] {
+  outline: none;
+}
+.react-control-flowchart .input-form input[type='checkbox']:hover {
+}
+.react-control-flowchart .input-form input[type='checkbox']:focus {
+}
+
+/* Input form: Select */
+.react-control-flowchart .input-form select {
+  height: 100%;
+  padding: 2px 5px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(229, 231, 235);
+  background-color: rgb(0, 0, 0);
+  border-radius: 0.25rem;
+  outline: none;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+}
+.react-control-flowchart .input-form select:hover {
+  background-color: rgb(15, 23, 42);
+}
+.react-control-flowchart .input-form select:focus {
+  background-color: rgb(15, 23, 42);
+}
+.react-control-flowchart .input-form option {
+  /*height: 100%;*/
+  /*padding: 2px 5px;*/
+  /*font-size: 0.75rem;*/
+  /*line-height: 1rem;*/
+  /*color: rgb(229, 231, 235);*/
+  /*background-color: rgb(0, 0, 0);*/
+  /*border-radius: 0.25rem;*/
+  /*outline: none;*/
+  /*text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;*/
+  /*color: black;*/
+}
